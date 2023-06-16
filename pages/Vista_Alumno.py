@@ -10,6 +10,10 @@ from tensorflow.keras.layers import Dense
 df_coment=pd.read_csv("https://raw.githubusercontent.com/EstebanPerez25/ACD-Modelo_predictivo_de_satisfacion/main/DataBase.csv")
 osf_valores = df_coment['osf'].unique().tolist()
 
+# -- Valores Inciales
+periodo=2
+osf=osf_valores[60]
+
 # -- Leer modelo
 #lin_model = pd.read_pickle(r'm_dnn.pkl')
 model = Sequential()
